@@ -38,19 +38,19 @@ const database = {
 }
 
 export const getStyles = () => {
-    return database.styles.map(style => ({...style}))
+    return database.styles.map(style => ({ ...style }))
 }
 
 export const getSizes = () => {
-    return database.sizes.map(size => ({...size}))
+    return database.sizes.map(size => ({ ...size }))
 }
 
 export const getMetals = () => {
-    return database.metals.map(metal => ({...metal}))
+    return database.metals.map(metal => ({ ...metal }))
 }
 
 export const getOrders = () => {
-    return database.customOrders.map(customOrder => ({...customOrder}))
+    return database.customOrders.map(customOrder => ({ ...customOrder }))
 }
 
 
@@ -71,7 +71,7 @@ export const setStyle = (id) => {
 
 export const addCustomOrder = () => {
     // Copy the current state of user choices
-    const newOrder = {...database.orderBuilder}
+    const newOrder = { ...database.orderBuilder }
 
     // Add a new primary key to the object
     const lastIndex = database.customOrders.length - 1
