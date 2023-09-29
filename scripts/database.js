@@ -66,18 +66,22 @@ export const getTypes = () => {
 
 export const setMetal = (id) => {
     database.orderBuilder.metalId = id
+    addCustomOrder()
 }
 
 export const setSize = (id) => {
     database.orderBuilder.sizeId = id
+    addCustomOrder()
 }
 
 export const setStyle = (id) => {
     database.orderBuilder.styleId = id
+    addCustomOrder()
 }
 
 export const setType = (id) => {
     database.orderBuilder.typeId = id
+    addCustomOrder()
 }
 
 
